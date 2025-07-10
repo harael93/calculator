@@ -71,11 +71,11 @@
 }
 
 /* Number buttons - lighter gray */
-#1, #2, #3, #4, #5, #6, #7, #8, #9, #0 {
+#one, #two, #three, #four, #five, #six, #seven, #eight, #nine, #zero {
     background-color: #6a6a6a;
 }
 
-#1:hover, #2:hover, #3:hover, #4:hover, #5:hover, #6:hover, #7:hover, #8:hover, #9:hover, #0:hover {
+#one:hover, #two:hover, #three:hover, #four:hover, #five:hover, #six:hover, #seven:hover, #eight:hover, #nine:hover, #zero:hover {
     background-color: #7a7a7a;
 }
 
