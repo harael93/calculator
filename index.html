@@ -10,22 +10,23 @@
 <body>
     <div id="container">
         <div id="calculator">
-            <input type="text" id="display" disabled>
+            <input type="number" id="display" readonly>
+
             <div id="buttons">
-                <button id="clear" onclick="clearDisplay()">C</button>
-                <button id="divide" onclick="appendToDisplay('/')">/</button>
-                <button id="multiply" onclick="appendToDisplay('*')">*</button>
-                <button id="minus" onclick="appendToDisplay('-')">-</button>
+                <button id="clear" onclick="clearDisplay(value)">C</button>
+                <button id="divide" onclick="appendToArray(display.value,'/')">/</button>
+                <button id="multiply" onclick="appendToArray(display.value,'*')">*</button>
+                <button id="minus" onclick="appendToArray(display.value,'-')">-</button>
 
                 <button id="seven" onclick="appendToDisplay('7')">7</button>
                 <button id="eight" onclick="appendToDisplay('8')">8</button>
                 <button id="nine" onclick="appendToDisplay('9')">9</button>
-                <button id="plus" onclick="appendToDisplay('+')">+</button>
+                <button id="plus" onclick="appendToArray(display.value,'+')">+</button>
 
                 <button id="four" onclick="appendToDisplay('4')">4</button>
                 <button id="five" onclick="appendToDisplay('5')">5</button>
                 <button id="six" onclick="appendToDisplay('6')">6</button>
-                <button id="equals" onclick="calculateResult()">=</button>
+                <button id="equals" onclick="calculate(inputarray)">=</button>
                 
                 <button id="one" onclick="appendToDisplay('1')">1</button>
                 <button id="two" onclick="appendToDisplay('2')">2</button>
